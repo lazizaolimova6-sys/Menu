@@ -17,18 +17,7 @@ export default function App() {
   const [cart, setCart] = useState([]);
   const [showCheckout, setShowCheckout] = useState(false);
 
-  const addToCart = (item) => {
-    const exist = cart.find((c) => c.id === item.id);
-    if (exist) {
-      setCart(
-        cart.map((c) =>
-          c.id === item.id ? { ...c, qty: c.qty + 1 } : c
-        )
-      );
-    } else {
-      setCart([...cart, { ...item, qty: 1 }]);
-    }
-  };
+  
 
   const removeItem = (id) => {
     setCart(cart.filter((c) => c.id !== id));
