@@ -13,6 +13,7 @@ export default function App() {
     { id: 3, name: "Hot Dog", price: 18000, image: hotdog },
     { id: 4, name: "Fries", price: 15000, image: "https://images.unsplash.com/photo-1576107232684-1279f390859f?w=500" },
     { id: 5, name: "Cola", price: 10000, image: "https://images.unsplash.com/photo-1581636625402-29b2a704ef13?w=500" },
+    { id: 6, name: "Cola", price: 10000, image: "https://images.unsplash.com/photo-1581636625402-29b2a704ef13?w=500" },
   ];
   const [cart, setCart] = useState([]);
   const [showCheckout, setShowCheckout] = useState(false);
